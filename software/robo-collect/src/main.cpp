@@ -5,5 +5,6 @@ void setup() {
 }
 
 void loop() {
+  int hogehoge;
   // put your main code here, to run repeatedly:
 }
