@@ -1,0 +1,18 @@
+#include <Arduino.h>
+#include <Wire.h>
+#include "Adafruit_TCS34725.h"
+#include <SPI.h>
+
+void setup(){
+  pinMode(3,OUTPUT);
+  pinMode(25,OUTPUT);
+  pinMode(16,OUTPUT);
+}
+
+void loop(){
+    digitalWrite(16,1);
+//   digitalWrite(25,1);
+//   delay(100);
+//   digitalWrite(25,0);
+//   delay(100);
+  }
