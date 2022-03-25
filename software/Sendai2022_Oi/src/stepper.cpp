@@ -33,9 +33,13 @@ void setup() {
     timerAttachInterrupt(timer, &step, true);
     timerAlarmWrite(timer, 1000, true);
     timerAlarmEnable(timer);
+
+    digitalWrite(19,1);
+    digitalWrite(5,0);
 }
 
 void loop() {
-stepcycle[0]=1000;
+stepcycle[0]=10;
+stepcycle[1]=10;
 
 }
