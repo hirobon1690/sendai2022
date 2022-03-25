@@ -455,3 +455,5 @@ void Adafruit_TCS34725::setIntLimits(uint16_t low, uint16_t high) {
   write8(0x06, high & 0xFF);
   write8(0x07, high >> 8);
 }
+
+
