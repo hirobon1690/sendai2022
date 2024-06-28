@@ -28,7 +28,7 @@ void setup() {
     pinMode(5, OUTPUT);
     pinMode(15, OUTPUT);
     pinMode(17, OUTPUT);
-
+    Serial.begin(115200);
     timer = timerBegin(0, 80, true);
     timerAttachInterrupt(timer, &step, true);
     timerAlarmWrite(timer, 1000, true);
@@ -39,7 +39,21 @@ void setup() {
 }
 
 void loop() {
+    Serial.println("A");
 stepcycle[0]=10;
 stepcycle[1]=10;
+delay(5000);
+Serial.println("B");
+stepcycle[0]=20;
+stepcycle[1]=20;
+delay(5000);
+Serial.println("C");
+stepcycle[0]=30;
+stepcycle[1]=30;
+delay(5000);
+Serial.println("D");
+stepcycle[0]=40;
+stepcycle[1]=40;
+delay(5000);
 
 }
